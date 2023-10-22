@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7Z7VsM1UylFmn2VzQfsAMU8ol2vJWo9GV2A0qR+0BmM=",
+  "Source": "Apprilium.TripPlanner.Api",
+  "BasePath": "_content/Apprilium.TripPlanner.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

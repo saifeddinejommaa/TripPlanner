@@ -1,0 +1,24 @@
+{
+  "name": "@aprilium/tripsm_global-states",
+  "version": "0.0.1",
+  "description": "global states",
+  "main": "global-states/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aprilium/tripsm_passenger": "^0.0.1",
+    "@types/react": "^17.0.0",
+    "axios": "^0.21.1",
+    "immer": "^9.0.15",
+    "immer-reducer": "^0.7.13",
+    "querystring": "^0.2.1",
+    "redux": "^4.1.0",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "redux-saga-tester": "^1.0.874",
+    "typescript": "^4.8.4"
+  },
+  "author": "JOMMAA",
+  "license": "ISC"
+}

@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Apprilium.TripPlanner.Application.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Apprilium.TripPlanner.Application.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Apprilium.TripPlanner.Application.csproj.nuget.g.props" />
+    <None Include="obj\Apprilium.TripPlanner.Application.csproj.nuget.g.targets" />
+    <None Include="obj\Apprilium.TripPlanner.Application.csproj.nuget.g.props" />
+    <None Include="obj\Apprilium.TripPlanner.Application.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net6.0\apphost.exe" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.assets.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.CopyComplete" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.dll" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.pdb" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.assets.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.CopyComplete" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.dll" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\Apprilium.TripPlanner.Application.pdb" />
+    <None Include="obj\Debug\net6.0\refint\Apprilium.TripPlanner.Application.dll" />
+    <None Include="obj\Debug\net6.0\refint\Apprilium.TripPlanner.Application.dll" />
+    <None Include="obj\Debug\net6.0\ref\Apprilium.TripPlanner.Application.dll" />
+    <None Include="obj\Debug\net6.0\ref\Apprilium.TripPlanner.Application.dll" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apprilium.TripPlanner.Domain\Apprilium.TripPlanner.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

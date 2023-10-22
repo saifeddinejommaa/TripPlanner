@@ -1,0 +1,17 @@
+{
+  "name": "tripsm",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^5.5.2"
+  },
+  "devDepencies": {
+    "@types/react": "^17.0.0",
+    "@types/redux-saga-tester": "^1.0.4"
+  },
+  "dependencies": {
+    "typescript": "^4.8.4",
+    "@antssm/common": "file:packages\\common"
+  }
+}
