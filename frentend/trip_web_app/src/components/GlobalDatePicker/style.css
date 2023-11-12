@@ -1,0 +1,24 @@
+.react-datepicker-wrapper {
+  grid-column: 5/10;
+  grid-row: 2/4;
+  background: transparent;
+}
+
+.react-datepicker__input-container {
+  border-radius: 10px;
+  border: 1px solid var(--Strokes, rgba(19, 45, 70, 0.25));
+  background: var(--foundation-green-green-50, #EBFCF7);
+  height: 35px;
+}
+
+input {
+  border: none;
+  background: transparent;
+  height: 35px;
+}
+.react-datepicker__input-container input {
+   width: 100%;
+   border: 0;
+   appearance: none;
+   outline: none;
+}

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+input{
+color: #718096;
+font-family: Montserrat;
+font-family: Montserrat;
+font-weight: 400;
+line-height: 21px;
+word-wrap: break-word;
+}

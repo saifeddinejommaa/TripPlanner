@@ -1,0 +1,14 @@
+.frame-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  position: relative;
+}
+
+.frame-wrapper .img {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}

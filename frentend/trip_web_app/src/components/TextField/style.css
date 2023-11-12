@@ -1,0 +1,27 @@
+.inputRounded .MuiOutlinedInput-root {
+    border-radius: 10px;
+    color: #718096;
+font-size: 14px;
+font-family: Montserrat;
+font-weight: 500;
+line-height: 21px;
+word-wrap: break-word;
+background: #EBFCF7;
+  }
+
+  h5{
+    text-align: start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #132D46;
+font-size: 16px;
+font-family: Montserrat;
+font-weight: 400;
+line-height: 24px;
+word-wrap: break-word
+  }
+
+  .field-container{
+    display: flex;
+    flex-direction: column;
+  }

@@ -1,0 +1,192 @@
+.sidebar {
+  background-color: #ffffff;
+  height: 964px;
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  border-radius: 0px 40px 40px 0px;
+background: var(--White, #FFF);
+box-shadow: 0px 24px 48px -12px rgba(0, 0, 0, 0.18);
+}
+
+.sidebar .frame-28 {
+  left: 215px !important;
+  position: absolute !important;
+  top: 9px !important;
+  transform: rotate(-180deg) !important;
+}
+
+.sidebar .frame-instance {
+  transform: rotate(180deg) !important;
+}
+
+.sidebar .frame-4 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 228px;
+  left: 0;
+  position: absolute;
+  top: 60px;
+}
+
+.sidebar .frame-5 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar .frame-6 {
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.sidebar .line {
+  height: 2px;
+  left: 8px;
+  position: absolute;
+  top: 529px;
+  width: 45px;
+}
+
+.sidebar .frame-28-instance {
+  left: 17px !important;
+  position: absolute !important;
+  top: 9px !important;
+}
+
+.sidebar .collapsed-nav-link {
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 65px;
+  width: 60px;
+}
+
+.sidebar .frame-27-4-instance-wrapper {
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 132px;
+  width: 60px;
+}
+
+.sidebar .frame-29-5-wrapper {
+  align-items: flex-start;
+  gap: 8px;
+  left: 1px;
+  padding: 8px;
+  position: absolute;
+  top: 195px;
+  width: 58px;
+}
+
+.sidebar .frame-30-5-wrapper {
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 263px;
+  width: 60px;
+}
+
+.sidebar .frame-31-5-wrapper {
+  align-items: flex-start;
+  gap: 8px;
+  left: 1px;
+  padding: 8px;
+  position: absolute;
+  top: 326px;
+  width: 58px;
+}
+
+.sidebar .frame-32-5-wrapper {
+  align-items: flex-start;
+  gap: 8px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 394px;
+  width: 60px;
+}
+
+.sidebar .collapsed-nav-link-2 {
+  align-items: center;
+  gap: 8px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 461px;
+  width: 60px;
+}
+
+.sidebar .user-profile-03-5-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 8px;
+  position: relative;
+}
+
+.sidebar .user-profile-03-5 {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.sidebar .bell-ringing-wrapper {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 543px;
+  width: 60px;
+}
+
+.sidebar .instance-node-3 {
+  flex: 0 0 auto !important;
+}
+
+.sidebar .notification-square-wrapper {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 599px;
+  width: 60px;
+}
+
+.sidebar .frame-33-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 895px;
+  width: 60px;
+}
+
+.sidebar.sidebar-collapsed {
+  width: 60px;
+}
+
+.sidebar.side-bar {
+  width: 260px;
+}

@@ -1,0 +1,12 @@
+.widget-with-border{
+     padding-left: 16px;
+      padding-right: 16px; 
+      padding-top: 8px; 
+      padding-bottom: 8px; 
+      border-radius: 10px; 
+      border: 1px rgba(19, 45, 70, 0.25) solid; 
+      justify-content: flex-start; 
+      align-items: center; 
+      gap: 16px; 
+      display: inline-flex
+}

@@ -1,0 +1,36 @@
+.buttons-content{
+    justify-content: flex-end; align-items: center; gap: 16px; display: flex
+}
+.button1-content{
+    width: 24px; height: 24px; position: relative
+}
+.button1{
+    width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; border: 2px #132D46 solid;
+}
+.button2-content{
+    padding: 8px; justify-content: flex-start; align-items: center; gap: 8px; display: flex
+}
+.button2{
+    width: 24px; height: 24px; position: relative
+}
+.button2-inside{
+    width: 16px; height: 20px; left: 4px; top: 2px; position: absolute; border: 2px #132D46 solid
+}
+.avatar-content{
+    padding: 10px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex
+}
+.avatar{
+    width: 33px; height: 38px; border-radius: 60px src="https://via.placeholder.com/33x38"
+}
+.user-name-content{
+    justify-content: center; align-items: center; display: flex
+}
+.user-name{
+    color: #132D46; font-size: 14px; font-family: Montserrat; font-weight: 400; line-height: 21px; word-wrap: break-word
+}
+.drop-down-content{
+    width: 24px; height: 24px; position: relative
+}
+.drop-down{
+    width: 13.31px; height: 7.67px; left: 5.33px; top: 8.33px; position: absolute; background: #32C7A0
+}

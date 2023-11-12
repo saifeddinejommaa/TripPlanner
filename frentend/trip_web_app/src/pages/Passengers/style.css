@@ -1,0 +1,12 @@
+.passenger-page-root{
+  margin-left: 300px;
+  padding: 20px;
+}
+.bottom-buttons-bar{
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,36 @@
+.nav-bar{
+    padding-left: 24px; 
+    padding-right: 24px; 
+      display: inline-flex;
+      border-radius: 0px 0px 10px 10px;
+border: 1px solid var(--Strokes, rgba(19, 45, 70, 0.25));
+background: var(--White, #FFF);
+display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.title-content{
+    color: #132D46; 
+    font-size: 21px;
+     font-family: Kumar One;
+      font-weight: 400;
+       word-wrap: break-word;
+
+       display: flex;
+    padding: 0px 24px;
+    align-items: center;
+    gap: 546px;
+    margin-right: auto;
+}
+
+.nav-bar-content{
+    height: 58px; 
+    justify-content: center; 
+    display: flex;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 85px;
+}
+
