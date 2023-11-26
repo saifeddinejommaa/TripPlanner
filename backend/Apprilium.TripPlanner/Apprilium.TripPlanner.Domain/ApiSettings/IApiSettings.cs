@@ -8,6 +8,6 @@
 
     public class ConnectionStrings
     {
-        public string GlobeIntelligenceDatabase { get; set; }
+        public string TripPlannerDatabase { get; set; }
     }
 }

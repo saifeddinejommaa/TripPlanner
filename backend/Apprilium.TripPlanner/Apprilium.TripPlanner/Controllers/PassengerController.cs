@@ -1,6 +1,5 @@
-﻿using Apprilium.TripPlanner.Application.Queries;
-using Apprilium.TripPlanner.Application.ResourceParameters;
-using Apprilium.TripPlanner.Application.Trip.Models;
+﻿using Apprilium.TripPlanner.Application.Model;
+using Apprilium.TripPlanner.Application.Queries;
 using Apprilium.TripPlanner.Domain.Common;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -9,7 +8,6 @@ using System.Net;
 
 namespace Apprilium.TripPlanner.Api.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class PassengerController: ControllerBase
@@ -25,10 +23,10 @@ namespace Apprilium.TripPlanner.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(PagedResult<Trip>), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> Get([FromQuery] PassengerParameters parameters)
+        [ProducesResponseType(typeof(PagedResult<Passenger>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> Get()
         {
-            return Ok(await _passengerQueries.GetAllPassengers(parameters));
+            return Ok(await _passengerQueries.GetAllPassengers());
         }
     }
 

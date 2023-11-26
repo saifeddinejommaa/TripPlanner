@@ -1,14 +1,27 @@
 import Passenger, { PassengerDataType } from "./models/Passenger"
-import Axios from 'axios'
-import { urlsConfig } from './index'
+import Axios, { AxiosRequestConfig } from 'axios'
+import { PagedResult } from "@aprilium/tripsm_common/lib/models/PagedResult"
+import { urlsConfig } from "./index"
 /*
 API call for setting a new informations to profile
 */
+
+const headers = {
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*'
+    // Other headers as needed
+  };
+
+  const axiosConfig: AxiosRequestConfig = {
+    headers: headers,
+    // Other configuration options if needed
+  };
+
 const LogRequestResponse = (response: any) => {
-    if (urlsConfig.values?.DEBUG_MODE) {
+    //if (urlsConfigs.values?.DEBUG_MODE) {
         console.log('HTTP - response')
         console.log(response)
-    }
+   // }
 }
 async function setPassenger(user:Passenger) : Promise<void> {
     console.log("Missing web service call")
@@ -16,17 +29,30 @@ async function setPassenger(user:Passenger) : Promise<void> {
 /*
 API call for getting the profile data by userId
 */
-async function fetchProfileData(id:number): Promise<Passenger|undefined>{
-
-    if (!urlsConfig.values) throw Error('No urls config found')
-   // const config = { headers: { Authorization: `Bearer ${token}` } }
+async function fetchPassengerData(id:number): Promise<Passenger|undefined>{
     const route = '/api/passenger'
+    console.log("--------API-----")
+    console.log(`${urlsConfig.values?.CORE_BASE_URL}${route}`)
+    if (!urlsConfig.values) throw Error('No urls config found')
     const response = await Axios.get<PassengerDataType>(
-        `${urlsConfig.values.CORE_BASE_URL}${route}`,
+        `${urlsConfig.values?.CORE_BASE_URL}${route}`, axiosConfig
+    )
+    
+    
+    LogRequestResponse(response)
+    return response.data
+}
+
+async function fetchAllPassengers(): Promise<PagedResult<Passenger>|undefined>{
+    const route = '/api/passenger'
+    console.log("--------API-----")
+    if (!urlsConfig.values) throw Error('No urls config found')
+    const response = await Axios.get<PagedResult<Passenger>>(
+        `${urlsConfig.values.CORE_BASE_URL}${route}`,axiosConfig
         //config
     )
     LogRequestResponse(response)
     return response.data
 }
 
-export {setPassenger,fetchProfileData}
+export {setPassenger,fetchPassengerData,fetchAllPassengers}

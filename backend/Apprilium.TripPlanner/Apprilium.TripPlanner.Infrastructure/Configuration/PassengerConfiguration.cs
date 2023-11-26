@@ -8,8 +8,8 @@ namespace Apprilium.TripPlanner.Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<PassengerDB> builder)
         {
-            builder.HasKey(x => x.PassengerId);
-            builder.ToTable("Passenger");
+            builder.HasKey(x => x.Id);
+            builder.ToTable("T_Passenger");
         }
     }
 }

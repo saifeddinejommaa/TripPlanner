@@ -1,5 +1,4 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC, ReactElement } from 'react';
 import './App.css';
 
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
@@ -15,8 +14,27 @@ import SupportPage from './pages/SupportPage';
 import AgentsPage from './pages/AgentsPage';
 import NotificationPage from './pages/NotificationsPage';
 import SettingsPage from './pages/Settings';
-function App() {
-  
+import {initSagaMiddleware, setUrlConfig} from '@aprilium/tripsm_global-states/lib';
+import { store, persistor, PersistGate, localsagas } from "./configStore";
+import { Provider } from 'react-redux';
+export type Props = {};
+initSagaMiddleware(localsagas);
+setUrlConfig("https://fda2-2a01-e0a-5a7-8f70-92a-34eb-3755-2ef0.ngrok.io",true);
+const StoreWrapper: FC<{ children: ReactElement }> = ({ children }) => (
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      {children}
+    </PersistGate>
+  </Provider>
+);
+const App : React.FC<Props> = () => {
+  return(
+    <StoreWrapper>
+    <Main />
+  </StoreWrapper>)
+}
+function Main() {
+
   return (
     <>
     <Router>

@@ -5,7 +5,9 @@ import {
     createReducerFunction
 } from 'immer-reducer'
 import Passenger from './models/Passenger'
-import { technicalErrorMessageType } from 'common/lib/utils'
+import { technicalErrorMessageType } from '@aprilium/tripsm_common/lib/helper/utils'
+import { PagedResult } from '@aprilium/tripsm_common/lib/models/PagedResult';
+
 /*
    Store states after lanching actions
    getPassenger : used to save the loading status, and if we have an exception 
@@ -13,6 +15,12 @@ import { technicalErrorMessageType } from 'common/lib/utils'
    Passenger : actual user profile
 */
 export type State = {
+    getAllPassengers: {
+        loading: boolean
+        success: boolean
+        errorMessage: string | null
+        technicalErrorMessage: technicalErrorMessageType | null
+    }
     getPassenger: {
         loading: boolean
         success: boolean
@@ -22,11 +30,12 @@ export type State = {
     setPassenger: {
         loading: boolean
         success: boolean
-        profileData: Passenger | null
+        passenger: Passenger | null
         errorMessage: string | null
         technicalErrorMessage: technicalErrorMessageType | null
     }
     Passenger: Passenger | null
+    AllPassengers:PagedResult<Passenger> | null;
 }
 
 export const initialState: State = {
@@ -39,25 +48,39 @@ export const initialState: State = {
     setPassenger: {
         loading: false,
         success: false,
-        profileData: null,
+        passenger: null,
         errorMessage: null,
         technicalErrorMessage: null
     },
+
+    getAllPassengers:{
+        loading: false,
+        success: false,
+        errorMessage: null,
+        technicalErrorMessage: null
+    },
+
+    AllPassengers : null,
    
     Passenger: {
-        PassengerId:-1,
-        FirstName:undefined,
-        LastName:undefined,
-        MiddleName:undefined,
-        BirthPlace:undefined,
-        BirthCountry:undefined,
-        BirthDay:undefined,
-        Nationality: undefined,
-        Address1: undefined,
-        Address2: undefined,
-        ZipCode: undefined,
-        City:undefined,
-        CountryId:undefined
+        Id:-1,
+        FirstName:"undefined",
+        LastName:"undefined",
+        MiddleName:"undefined",
+        BirthPlace:"undefined",
+        BirthCountry:"undefined",
+        BirthDay:new Date(),
+        Nationality: "undefined",
+        Address1: "undefined",
+        Address2: "undefined",
+        ZipCode: "undefined",
+        City:"undefined",
+        CountryId:0,
+        LocalFirstName:undefined,
+        LocalLastName:undefined,
+        LocalMiddleName:undefined,
+        PhoneNumber1:undefined,
+        PhoneNumber2:undefined
     },
 }
 
@@ -65,6 +88,25 @@ export const initialState: State = {
 The different action that can be launched from the front side
 */
 export class PassengerState extends ImmerReducer<State> {
+
+    getAllPassengers() {
+        this.draftState.getPassenger.loading = true
+    }
+    getAllPassengersDataSuccess(pagedResult: PagedResult<Passenger>) {
+        this.draftState.getAllPassengers.loading = false
+        this.draftState.AllPassengers = pagedResult
+        this.draftState.getAllPassengers.errorMessage = null
+        this.draftState.getAllPassengers.technicalErrorMessage = null
+    }
+    getAllPassengersDataFailure(
+        errorMessage: string,
+        technicalErrorMessage: technicalErrorMessageType
+    ) {
+        this.draftState.getAllPassengers.loading = false
+        this.draftState.getAllPassengers.errorMessage = errorMessage
+        this.draftState.getAllPassengers.technicalErrorMessage =
+            technicalErrorMessage
+    }
     /*
     Action to get the user profile by user Id
     */

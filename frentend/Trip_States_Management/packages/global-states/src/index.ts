@@ -8,14 +8,14 @@ import {
     PersistConfig,
     REHYDRATE
 } from 'redux-persist'
-
+import UrlsConfigs from "@aprilium/tripsm_common/lib/urlsConfig"
+import { urlsConfig as passengerUrlConfig } from '@aprilium/tripsm_passenger/lib'
 //import state
 
 
 import {
     PassengerReducerFunction,
     PassengerState,
-    State as userProfileState
 } from '@aprilium/tripsm_passenger/lib/state'
 
 
@@ -41,6 +41,17 @@ export type States = {
 
 export type StateName =
     | 'passenger'
+
+export function setUrlConfig(
+        coreApi: string,
+        debugMode = false
+)  {
+    passengerUrlConfig.setURls({
+        CORE_BASE_URL: coreApi,
+        DEBUG_MODE: debugMode
+        })
+    }
+
 
     export const sagas = (
         Object.keys(initialSagas) as Array<keyof typeof initialSagas>

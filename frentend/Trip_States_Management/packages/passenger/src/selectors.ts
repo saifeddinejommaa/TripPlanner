@@ -1,3 +1,4 @@
+import { PagedResult } from '@aprilium/tripsm_common/lib/models/PagedResult'
 import { States } from './index'
 import Passenger from './models/Passenger'
 import { State } from './state'
@@ -13,5 +14,9 @@ export function getPassengerData(
     states: Partial<States>
 ): Passenger | null | undefined {
     return states?.passenger?.Passenger
+}
+
+export function getAllPassengersList(states: Partial<States>):PagedResult<Passenger> | null | undefined{
+     return states?.passenger?.AllPassengers
 }
 

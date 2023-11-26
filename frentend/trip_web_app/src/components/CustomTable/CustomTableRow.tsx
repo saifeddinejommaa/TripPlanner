@@ -7,7 +7,7 @@ interface Props {
 export const CustomTableRow = ({ passenger
 }: Props): JSX.Element => {
     return <tr>
-    <td className='column-header'>{passenger.PassengerId}</td>
+    <td className='column-header'>{passenger.Id}</td>
     <td>{passenger.FirstName}</td>
     <td>{passenger.FirstName}</td>
     <td>{passenger.BirthDay?.toString()}</td>

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj": {}
+    "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj": {
+    "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj",
+        "projectUniqueName": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj",
         "projectName": "Apprilium.TripPlanner.Application",
-        "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj",
-        "packagesPath": "C:\\Users\\sjommaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\obj\\",
+        "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj",
+        "packagesPath": "C:\\Users\\Jommaa\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sjommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -33,11 +35,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj": {
-                "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj"
+              "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj": {
+                "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj"
               },
-              "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj"
+              "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj": {
+                "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj"
               }
             }
           }
@@ -105,26 +107,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj": {
+    "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj",
+        "projectUniqueName": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj",
         "projectName": "Apprilium.TripPlanner.Domain",
-        "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj",
-        "packagesPath": "C:\\Users\\sjommaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\obj\\",
+        "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jommaa\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sjommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -187,26 +191,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj": {
+    "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj",
+        "projectUniqueName": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj",
         "projectName": "Apprilium.TripPlanner.Infrastructure",
-        "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\sjommaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\obj\\",
+        "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\Apprilium.TripPlanner.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Jommaa\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sjommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -220,8 +226,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj": {
-                "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj"
+              "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj": {
+                "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Domain\\Apprilium.TripPlanner.Domain.csproj"
               }
             }
           }
@@ -273,26 +279,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj": {
+    "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj",
+        "projectUniqueName": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj",
         "projectName": "Apprilium.TripPlanner.Api",
-        "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj",
-        "packagesPath": "C:\\Users\\sjommaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\obj\\",
+        "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Api.csproj",
+        "packagesPath": "C:\\Users\\Jommaa\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sjommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jommaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -306,8 +314,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj": {
-                "projectPath": "C:\\Users\\sjommaa\\Workspace\\others\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj"
+              "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj": {
+                "projectPath": "D:\\workspace\\release_salim\\TripPlanner\\backend\\Apprilium.TripPlanner\\Apprilium.TripPlanner.Application\\Apprilium.TripPlanner.Application.csproj"
               }
             }
           }
@@ -378,7 +386,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

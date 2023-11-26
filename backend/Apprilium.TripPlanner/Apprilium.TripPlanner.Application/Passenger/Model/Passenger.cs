@@ -4,12 +4,18 @@ namespace Apprilium.TripPlanner.Application.Model
 {
     public class Passenger
     {
-        public int PassengerId { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
 
         public string MiddleName { get; set; }
+
+        public string LocalFirstName { get; set; }
+
+        public string LocalMiddleName { get; set; }
+
+        public string LocalLastName { get; set; }
 
         public DateTime BirthDay { get; set; }
 
@@ -28,5 +34,9 @@ namespace Apprilium.TripPlanner.Application.Model
         public string City { get; set; }
 
         public int CountryId { get; set; }
+
+        public int PhoneNumber1 { get; set; }
+
+        public int PhoneNumber2 { get; set; }
     }
 }

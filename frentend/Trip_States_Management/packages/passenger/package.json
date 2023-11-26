@@ -1,14 +1,18 @@
 {
   "name": "@aprilium/tripsm_passenger",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "passenger states",
-  "main": "passenger/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**" 
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "dependencies": {
-    "@aprilium/tripsm_common": "^0.0.2",
+    "@aprilium/tripsm_common": "^0.0.3",
     "@types/react": "^17.0.0",
     "axios": "^0.21.1",
     "immer": "^9.0.15",

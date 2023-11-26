@@ -57,7 +57,8 @@ namespace Apprilium.TripPlanner.Api
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(applicationAssembly));
             services.AddAutoMapper(applicationAssembly);
             services.AddApplicationInsightsTelemetry();
-            services.AddControllers(config => { config.Filters.Add<CacheIdentityFilter>(); })
+            services.AddHealthChecks();
+            services.AddControllers()
            .AddNewtonsoftJson();
         }
 
@@ -93,14 +94,15 @@ namespace Apprilium.TripPlanner.Api
             app.UseMiddleware<ExceptionHandlerMiddleware>();
             //app.UseAcceptLanguageSetCulture();
             app.UseRouting();
-            app.UseAuthorization();
-            app.UseAuthentication();
+           // app.UseAuthorization();
+            //app.UseAuthentication();
             app.UseRequestLocalization(app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value);
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
+           });
+            
         }
 
         private static void AddDapperCustomTypeHandlers()

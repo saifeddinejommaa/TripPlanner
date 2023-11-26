@@ -2,6 +2,10 @@
     "extends": "../../tsconfig.json",
     "compilerOptions": {
         "outDir": "./lib",
+        "baseUrl": ".",
+        "paths": {
+            "@tripsm/global-states": ["../global-states/src"]
+        }
     },
     "include": ["./src"]
-  }
+  } 

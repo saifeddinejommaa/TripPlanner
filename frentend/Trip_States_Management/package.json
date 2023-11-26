@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "typescript": "^4.8.4",
-    "@antssm/common": "file:packages\\common"
+    "@aprilium/tripsm_common": "file:packages\\common",
+    "@aprilium/tripsm_global-states": "file:packages\\global-states",
+    "@aprilium/tripsm_passenger": "file:packages\\passenger"
   }
 }

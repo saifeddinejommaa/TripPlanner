@@ -17,7 +17,7 @@ import {
 } from './state'
 
 import passengerEffects from './effects'
-import UrlsConfigs from 'common/lib/urlsConfigs'
+import UrlsConfigs from '@aprilium/tripsm_common/lib/urlsConfigs'
 
 export const initialSagas = {
     passenger: passengerEffects
@@ -26,6 +26,8 @@ export const initialSagas = {
 export const initialStates = {
     passenger: passengerInitialState
 }
+
+
 
 export const sagas = (
     Object.keys(initialSagas) as Array<keyof typeof initialSagas>

@@ -13,7 +13,7 @@ namespace Apprilium.TripPlanner.Infrastructure.Data
     {
         public IDbConnection GiDbConnection()
         {
-            return new SqlConnection(ApiSettings.ConnectionStrings.GlobeIntelligenceDatabase);
+            return new SqlConnection(ApiSettings.ConnectionStrings.TripPlannerDatabase);
         }
     }
 }
