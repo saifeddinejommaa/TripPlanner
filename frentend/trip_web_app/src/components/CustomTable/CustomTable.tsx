@@ -3,7 +3,7 @@ import './style.css';
 import '@aprilium/tripsm_passenger/lib/models/Passenger'
 import { CustomTableRow } from './CustomTableRow';
 interface Props {
-    passengers: Passenger[]
+    passengers: Passenger[] |undefined
 }
 export const CustomTable = ({ passengers
 }: Props): JSX.Element => {
@@ -19,6 +19,6 @@ export const CustomTable = ({ passengers
       <th style={{ width: 180 }} className='column-header'>Nationality</th>
       <th style={{ width: 100 }} className='column-header'>Action</th>
     </tr>
-    {passengers.map((passenger)=><CustomTableRow passenger={passenger}></CustomTableRow>)}
+    {passengers?.map((passenger)=><CustomTableRow passenger={passenger}></CustomTableRow>)}
   </table></div>);
 }

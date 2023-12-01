@@ -25,7 +25,7 @@ export const PassengersPage = (): JSX.Element => {
     return (
         <div className='passenger-page-root'>
             <SearchComponent></SearchComponent>
-            <CustomTable passengers={[]}></CustomTable>
+            <CustomTable passengers={passengers?.Results}></CustomTable>
             <div className='bottom-buttons-bar'>
                 <PrimaryButton onClicked={() => { setaddPassegerPopupOpened(true); }} icon={<UserProfileIcon className={""} />} text='Add new Passenger'></PrimaryButton>
             </div>

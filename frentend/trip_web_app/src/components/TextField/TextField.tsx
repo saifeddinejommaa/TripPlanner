@@ -4,12 +4,13 @@ import './style.css'
 interface Props {
   label: string,
   defaultText:String;
+  onChange: (text:string) => void;
 }
 
 export const CustomTextField = ({label,
-  defaultText
+  defaultText, onChange
   }: Props): JSX.Element => {
-    return ( <div className="field-container"> <h5>{label}</h5><TextField  className="inputRounded"
+    return ( <div className="field-container"> <h5>{label}</h5><TextField onChange={(e) => onChange(e.target.value)} className="inputRounded"
     placeholder={label}
     variant="outlined"
     size="small"/></div>);

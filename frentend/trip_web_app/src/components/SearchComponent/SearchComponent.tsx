@@ -10,13 +10,13 @@ export const SearchComponent = ({
     <div className='search_elements'>
       <table className='search-table'>
         <tr>
-          <th><CustomTextField defaultText="" label="First Name"></CustomTextField></th>
-          <th><CustomTextField defaultText="" label="Last Name"></CustomTextField></th>
-          <th><CustomTextField defaultText="" label="N° Passport"></CustomTextField></th>
-          <th><CustomTextField defaultText="" label="Group"></CustomTextField></th>
+          <th><CustomTextField onChange={(text:string)=>{}} defaultText="" label="First Name"></CustomTextField></th>
+          <th><CustomTextField onChange={(text:string)=>{}} defaultText="" label="Last Name"></CustomTextField></th>
+          <th><CustomTextField onChange={(text:string)=>{}} defaultText="" label="N° Passport"></CustomTextField></th>
+          <th><CustomTextField onChange={(text:string)=>{}} defaultText="" label="Group"></CustomTextField></th>
         </tr>
         <tr>
-          <th><CustomTextField defaultText="" label="N° Visa"></CustomTextField></th>
+          <th><CustomTextField onChange={(text:string)=>{}} defaultText="" label="N° Visa"></CustomTextField></th>
         </tr>
       </table>
         <div className='button-container'>
