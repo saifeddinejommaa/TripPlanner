@@ -6,8 +6,8 @@ namespace Apprilium.TripPlanner.Domain.Common
     {
         private int? _pageSize { get; set; }
         public int PageNumber { get; set; } = 1;
-        public string SortColumn { get; set; }
-        public string SortOrder { get; set; } //"DESC" vs "ASC"
+        public string? SortColumn { get; set; }
+        public string? SortOrder { get; set; } //"DESC" vs "ASC"
         public int Table { get; set; }
         public int Dropdown { get; set; }
         public bool All { get; set; }

@@ -1,8 +1,10 @@
 ﻿
 
+using Apprilium.TripPlanner.Domain.Common;
+
 namespace Apprilium.TripPlanner.Application.Model
 {
-    public class Passenger
+    public class Passenger : PagingParameter
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

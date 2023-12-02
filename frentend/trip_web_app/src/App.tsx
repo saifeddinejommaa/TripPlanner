@@ -19,7 +19,7 @@ import { store, persistor, PersistGate, localsagas } from "./configStore";
 import { Provider } from 'react-redux';
 export type Props = {};
 initSagaMiddleware(localsagas);
-setUrlConfig("https://fda2-2a01-e0a-5a7-8f70-92a-34eb-3755-2ef0.ngrok.io",true);
+setUrlConfig("https://localhost:47616",true);
 const StoreWrapper: FC<{ children: ReactElement }> = ({ children }) => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>

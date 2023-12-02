@@ -33,7 +33,8 @@ param0 : action
 function* getPassengerEffect(action: ReturnType<typeof PassengerActions.getPassenger>){
     try {
         console.log("on est dans l'effect")
-        const passenger:passenger = yield call(fetchPassengerData, action.payload)
+       // const passenger:passenger = yield call(fetchPassengerData, action.payload)
+       const passenger:passenger = yield call(fetchPassengerData)
         if(!passenger) throw Error 
         yield put(PassengerActions.getPassengerDataSuccess(passenger))
     } catch (err) {
@@ -44,7 +45,10 @@ function* getPassengerEffect(action: ReturnType<typeof PassengerActions.getPasse
 function* getAllPassengersEffect(action: ReturnType<typeof PassengerActions.getAllPassengers>){
     try {
         console.log("on est dans l'effect")
-        const passengers:PagedResult<Passenger>|undefined = yield call(fetchAllPassengers)
+        if (!action.payload) {
+            throw Error('Missing Pagin parameters')
+        }
+        const passengers:PagedResult<Passenger>|undefined = yield call(fetchAllPassengers,action.payload)
         if(!passengers) throw Error 
         yield put(PassengerActions.getAllPassengersDataSuccess(passengers))
     } catch (err) {

@@ -44,11 +44,18 @@ namespace Apprilium.TripPlanner.Api
                 options.SupportedUICultures = supportedCultures;
             });
             services.Configure<ApiSettings>(Configuration);
+            services.AddCors(o => o.AddPolicy("AllowAnyOrigin",
+                      builder =>
+                      {
+                          builder.AllowAnyOrigin()
+                                 .AllowAnyMethod()
+                                 .AllowAnyHeader();
+                      }));
             Configuration.Get<ApiSettings>();
             services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
 
             services.AddDbContext<TripPlannerContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("GlobeIntelligenceDatabase"),
+                options.UseSqlServer(Configuration.GetConnectionString("TripPlannerDatabase"),
                     context => context.MigrationsAssembly("Apprilium.TripPlanner.Infrastructure")
                 ));
             services.AddScoped<DbContext, TripPlannerContext>();
@@ -92,6 +99,7 @@ namespace Apprilium.TripPlanner.Api
 
             app.UseHttpsRedirection();
             app.UseMiddleware<ExceptionHandlerMiddleware>();
+            app.UseCors("AllowAnyOrigin");
             //app.UseAcceptLanguageSetCulture();
             app.UseRouting();
            // app.UseAuthorization();
@@ -109,7 +117,7 @@ namespace Apprilium.TripPlanner.Api
         {
             //SqlMapper.AddTypeHandler(typeof(List<DateTime>), new SemicolonListTypeHandler());
             SqlMapper.AddTypeHandler(new JsonObjectTypeHandler<Trip>());
-            SqlMapper.AddTypeHandler(new JsonObjectTypeHandler<Passenger>());
+            //SqlMapper.AddTypeHandler(new JsonObjectTypeHandler<Passenger>());
             SqlMapper.AddTypeHandler(new JsonObjectTypeHandler<Hotel>());
             SqlMapper.AddTypeHandler(new JsonObjectTypeHandler<Group>());
         }

@@ -16,6 +16,7 @@ namespace Apprilium.TripPlanner.Application.CustomMapper.TypeHandlers
 
         public override T Parse(object value)
         {
+            Console.WriteLine("Response", value.ToString());
             return JsonConvert.DeserializeObject<T>(value.ToString() ?? string.Empty);
         }
     }

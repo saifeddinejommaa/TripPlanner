@@ -1,6 +1,6 @@
 {
   "name": "@aprilium/tripsm_passenger",
-  "version": "0.0.6",
+  "version": "0.0.35",
   "description": "passenger states",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,7 +12,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@aprilium/tripsm_common": "^0.0.3",
+    "@aprilium/tripsm_common": "^0.0.4",
     "@types/react": "^17.0.0",
     "axios": "^0.21.1",
     "immer": "^9.0.15",

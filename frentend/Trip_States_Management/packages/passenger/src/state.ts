@@ -7,6 +7,7 @@ import {
 import Passenger from './models/Passenger'
 import { technicalErrorMessageType } from '@aprilium/tripsm_common/lib/helper/utils'
 import { PagedResult } from '@aprilium/tripsm_common/lib/models/PagedResult';
+import PassengersParameter from './models/PassengersParameters';
 
 /*
    Store states after lanching actions
@@ -89,7 +90,7 @@ The different action that can be launched from the front side
 */
 export class PassengerState extends ImmerReducer<State> {
 
-    getAllPassengers() {
+    getAllPassengers(params:PassengersParameter) {
         this.draftState.getPassenger.loading = true
     }
     getAllPassengersDataSuccess(pagedResult: PagedResult<Passenger>) {

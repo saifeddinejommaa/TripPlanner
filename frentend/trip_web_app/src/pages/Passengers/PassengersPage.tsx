@@ -11,15 +11,25 @@ import {useDispatch, useSelector} from 'react-redux';
 import {PagedResult} from '@aprilium/tripsm_common/lib/models/PagedResult';
 import {getAllPassengersList} from  '@aprilium/tripsm_passenger/lib/selectors';
 import {PassengerActions} from '@aprilium/tripsm_passenger/lib/state'
+import PassengersParameter from '@aprilium/tripsm_passenger/lib/models/PassengersParameters';
 
 export const PassengersPage = (): JSX.Element => {
     const dispatch = useDispatch();
+    const parameters: PassengersParameter = {
+        pageSize:25,
+        pageNumber: 1,
+        sortColumn: 'Id',
+        SortOrder: 'ASC',
+        dropdown: 1,
+        table:1,
+        sortOrder: "Id",
+        all: true,
+      };
     const passengers: PagedResult<Passenger> |undefined |null =
     useSelector(getAllPassengersList);
     useEffect(() => {
-        if (!passengers) {
-          dispatch(PassengerActions.getPassenger(1));
-        }
+          dispatch(PassengerActions.getAllPassengers(parameters));
+         // dispatch(PassengerActions.getPassenger(7));
       });
     const [addPassegerPopupOpened, setaddPassegerPopupOpened] = useState(false);
     return (
