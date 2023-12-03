@@ -11,6 +11,8 @@ using Dapper;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System.Globalization;
 
 namespace Apprilium.TripPlanner.Api
@@ -66,7 +68,13 @@ namespace Apprilium.TripPlanner.Api
             services.AddApplicationInsightsTelemetry();
             services.AddHealthChecks();
             services.AddControllers()
-           .AddNewtonsoftJson();
+           .AddNewtonsoftJson()
+             .AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+            });
+            
         }
 
         public void ConfigureContainer(ContainerBuilder builder)

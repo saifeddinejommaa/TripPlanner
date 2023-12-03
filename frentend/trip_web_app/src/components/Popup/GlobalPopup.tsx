@@ -9,6 +9,7 @@ interface Props { onClose: () => void;
     children:JSX.Element }
 export const GlobalPopup = ({onClose, children,isOpen, heightInPercent,widthInPercent
 }: Props): JSX.Element|null => {
+    
     if (!isOpen) return null;
     return(
         <div
