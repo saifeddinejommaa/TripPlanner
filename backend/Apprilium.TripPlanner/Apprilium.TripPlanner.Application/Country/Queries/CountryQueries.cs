@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Apprilium.TripPlanner.Application.Country.Queries
 {
-    internal class CountryQueries
+    public class CountryQueries : ICountryQueries
     {
+        public Task<IEnumerable<Model.Country>> GetAllCountries()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Model.Country> GetPassengerById(int countryId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
