@@ -1,0 +1,29 @@
+{
+  "name": "@aprilium/tripsm_country",
+  "version": "0.0.1",
+  "description": "country",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**" 
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc"
+  },
+  "dependencies": {
+    "@aprilium/tripsm_common": "^0.0.4",
+    "@types/react": "^17.0.0",
+    "axios": "^0.21.1",
+    "immer": "^9.0.15",
+    "immer-reducer": "^0.7.13",
+    "querystring": "^0.2.1",
+    "react-i18next": "^11.11.4",
+    "redux": "^4.1.0",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "typescript": "^4.8.4"
+  },
+  "author": "JOMMAA",
+  "license": "ISC"
+}
