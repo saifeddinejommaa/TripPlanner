@@ -7,7 +7,7 @@ import { State } from './state'
 Different methods that can be used to get the different elements 
 from the user profile
 */
-export function getPassengerState(states: Partial<States>): State | undefined {
+export function getCountriesState(states: Partial<States>): State | undefined {
     return states?.country
 }
 export function getCountry(

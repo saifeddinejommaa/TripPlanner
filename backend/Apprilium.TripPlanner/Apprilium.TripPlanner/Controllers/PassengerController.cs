@@ -1,7 +1,6 @@
 ﻿using Apprilium.TripPlanner.Application.Model;
 using Apprilium.TripPlanner.Application.Queries;
 using Apprilium.TripPlanner.Application.ResourceParameters;
-using Apprilium.TripPlanner.Domain.Common;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -34,6 +33,13 @@ namespace Apprilium.TripPlanner.Api.Controllers
         public async Task<IActionResult> GetPassengerById()
         {
             return Ok(await _passengerQueries.GetPassengerById());
+        }
+
+        [HttpPost("new")]
+        public async Task<IActionResult> AddNewPassenger([FromBody] Passenger newPassenger)
+        {
+            var newCandidate = await _mediator.Send(newPassenger);
+            return Ok(newCandidate);
         }
     }
 

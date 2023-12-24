@@ -16,8 +16,8 @@ import {
     State as passengerState
 } from './state'
 
-import passengerEffects from './effects'
-import UrlsConfigs from '@aprilium/tripsm_common/lib/urlsConfigs'
+import passengerEffects from './effects';
+import UrlsConfigs from '@aprilium/tripsm_common/lib/urlsConfig';
 
 export const initialSagas = {
     passenger: passengerEffects

@@ -12,13 +12,12 @@ import { createReducerFunction } from 'immer-reducer'
 
 import {
     initialState as countryInitialState,
-    countryReducerFunction as countryReducerFunction,
+    CountryReducerFunction as countryReducerFunction,
     State as countryState
 } from './state'
 
 import countryEffects from './effects'
-import UrlsConfigs from '@aprilium/tripsm_common/lib/urlsConfigs'
-
+import UrlsConfigs from '@aprilium/tripsm_common/lib/urlsConfig'
 export const initialSagas = {
     country: countryEffects
 }

@@ -33,7 +33,7 @@ param0 : action
 function* getPassengerEffect(action: ReturnType<typeof PassengerActions.getPassenger>){
     try {
         console.log("on est dans l'effect")
-       // const passenger:passenger = yield call(fetchPassengerData, action.payload)
+      // const passenger:passenger = yield call(fetchPassengerData, action.payload)
        const passenger:passenger = yield call(fetchPassengerData)
         if(!passenger) throw Error 
         yield put(PassengerActions.getPassengerDataSuccess(passenger))

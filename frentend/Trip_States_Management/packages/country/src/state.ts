@@ -60,7 +60,7 @@ export class CountryState extends ImmerReducer<State> {
     }
     getCountriesSuccess(countries: Array<Country>) {
         this.draftState.getCountries.loading = false
-        this.draftState.Countries = countries
+        this.draftState.countries = countries
         this.draftState.getCountries.errorMessage = null
         this.draftState.getCountries.technicalErrorMessage = null
     }
@@ -109,7 +109,7 @@ export class CountryState extends ImmerReducer<State> {
 }
 
 export const CountryActions = createActionCreators(CountryState)
-export const PassengerReducerFunction = createReducerFunction(
+export const CountryReducerFunction = createReducerFunction(
     CountryState,
     initialState
 )

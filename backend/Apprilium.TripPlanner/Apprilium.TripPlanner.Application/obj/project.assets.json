@@ -131,25 +131,13 @@
       "code": "NU1301",
       "level": "Error",
       "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
-      "libraryId": "Microsoft.EntityFrameworkCore"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
       "libraryId": "Microsoft.AspNetCore.Http"
     },
     {
       "code": "NU1301",
       "level": "Error",
       "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
-      "libraryId": "Microsoft.Graph"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
-      "libraryId": "Microsoft.AspNetCore.Localization"
+      "libraryId": "Microsoft.EntityFrameworkCore"
     },
     {
       "code": "NU1301",
@@ -161,13 +149,25 @@
       "code": "NU1301",
       "level": "Error",
       "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
-      "libraryId": "Microsoft.EntityFrameworkCore.Relational"
+      "libraryId": "Microsoft.AspNetCore.Localization"
     },
     {
       "code": "NU1301",
       "level": "Error",
       "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
       "libraryId": "Microsoft.AspNetCore.Mvc"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.Graph"
     },
     {
       "code": "NU1301",

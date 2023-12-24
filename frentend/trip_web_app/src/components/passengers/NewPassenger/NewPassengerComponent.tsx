@@ -11,6 +11,7 @@ import { CustomTextField } from '../../TextField/TextField'
 import { WidgetWithBorder } from '../../WidgetWithBorder/WdgetWithBorder'
 import { UserPhotoBloc } from '../../userPhotoBloc/userPhotoBloc'
 import './style.css'
+import Dropdown from '../../DropDown/DropDown'
 interface Props { }
 export const NewPassensengerComponent = ({
 }: Props): JSX.Element | null => {
@@ -23,6 +24,31 @@ export const NewPassensengerComponent = ({
     const [deliveryCountry, setDeliveryCountry] = useState('');
     const [visaType, setvisaType] = useState('');
     const [visaN, setvisaN] = useState('');
+    const locations= [
+        {
+          label: 'New York',
+          value: 'newYork',
+        },
+        {
+          label: 'Dublin',
+          value: 'dublin',
+        },
+        {
+          label: 'Istanbul',
+          value: 'istanbul',
+        },
+        {
+          label: 'California',
+          value: 'colifornia',
+        },
+        {
+          label: 'Izmir',
+          value: 'izmir',
+        },
+        {
+          label: 'Oslo',
+          value: 'oslo',
+        },]
     return (<div className='new-passenger'>
         <h5>New Passenger</h5>
         <WidgetWithBorder child={<CustomTextField onChange={(text:string)=> setFirstName(text)} label='Group' defaultText='Select one'></CustomTextField>} />
@@ -64,7 +90,7 @@ export const NewPassensengerComponent = ({
                 <table className='passeport-info-fields'>
                     <tr>
                         <th><CustomTextField  onChange={(text:string)=> setpassportN(text)}   defaultText="" label="N° Passeport"></CustomTextField></th>
-                        <th><CustomTextField  onChange={(text:string)=> setDeliveryCountry(text)}   defaultText="" label="Delivery country"></CustomTextField></th>
+                        <th><Dropdown name='delivary' onChange={()=>{}} title='Test'  list={locations} /></th>
                         <th><GlobalDatePicker onChange={() => { }} placeholder="Issuance Date" defaultText="" label="Issuance Date"></GlobalDatePicker></th>
                         <th><GlobalDatePicker  placeholder="Expiration Date" onChange={() => { }} defaultText="" label="Expiration Date"></GlobalDatePicker></th>
                         <th><CustomTextField  onChange={(text:string)=> setGender(text)}   defaultText="" label="Actual Nationality"></CustomTextField></th>

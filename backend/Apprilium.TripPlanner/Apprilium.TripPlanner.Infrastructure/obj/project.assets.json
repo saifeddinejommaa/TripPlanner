@@ -114,12 +114,6 @@
       "code": "NU1301",
       "level": "Error",
       "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
-      "libraryId": "Microsoft.Graph"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
       "libraryId": "Microsoft.EntityFrameworkCore.SqlServer"
     },
     {
@@ -127,6 +121,12 @@
       "level": "Error",
       "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Impossible de charger l'index de service pour la source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.Graph"
     },
     {
       "code": "NU1301",
