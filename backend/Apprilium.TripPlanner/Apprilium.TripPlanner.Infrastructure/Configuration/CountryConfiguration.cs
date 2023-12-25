@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Apprilium.TripPlanner.Infrastructure.Configuration
 {
-    public class CountryConfiguration : IEntityTypeConfiguration<PassengerDB>
+    public class CountryConfiguration : IEntityTypeConfiguration<CountryDB>
     {
         public void Configure(EntityTypeBuilder<CountryDB> builder)
         {

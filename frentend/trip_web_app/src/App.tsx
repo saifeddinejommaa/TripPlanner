@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, useEffect } from 'react';
 import './App.css';
 
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
@@ -16,10 +16,13 @@ import NotificationPage from './pages/NotificationsPage';
 import SettingsPage from './pages/Settings';
 import {initSagaMiddleware, setUrlConfig} from '@aprilium/tripsm_global-states/lib';
 import { store, persistor, PersistGate, localsagas } from "./configStore";
-import { Provider } from 'react-redux';
+import { Provider, useDispatch, useSelector } from 'react-redux';
+import Constant from '@aprilium/tripsm_constants/lib/models/Constant';
+import { ConstantActions } from '@aprilium/tripsm_constants/lib/state';
 export type Props = {};
 initSagaMiddleware(localsagas);
 setUrlConfig("https://localhost:47616",true);
+
 const StoreWrapper: FC<{ children: ReactElement }> = ({ children }) => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
@@ -28,13 +31,20 @@ const StoreWrapper: FC<{ children: ReactElement }> = ({ children }) => (
   </Provider>
 );
 const App : React.FC<Props> = () => {
+  
   return(
     <StoreWrapper>
     <Main />
   </StoreWrapper>)
 }
 function Main() {
-
+  const dispatch = useDispatch();
+  const constants: Constant |undefined |null =useSelector(getConstants);
+  useEffect(()=>{
+    console.log("countries", constants?.Countries)
+ },[constants])
+ console.log("getConstants called")
+ dispatch(ConstantActions.getConstants());
   return (
     <>
     <Router>

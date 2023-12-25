@@ -1,6 +1,6 @@
 ﻿
 
-namespace Apprilium.TripPlanner.Application.Country.Model
+namespace Apprilium.TripPlanner.Application.Model
 {
     public class Country
     {

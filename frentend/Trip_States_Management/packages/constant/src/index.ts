@@ -11,19 +11,19 @@ import {
 import { createReducerFunction } from 'immer-reducer'
 
 import {
-    initialState as countryInitialState,
-    CountryReducerFunction as countryReducerFunction,
-    State as countryState
+    initialState as constantInitialState,
+    State as ConstantState,
+    ConstantsReducerFunction
 } from './state'
 
-import countryEffects from './effects'
+import constantsEffects from './effects'
 import UrlsConfigs from '@aprilium/tripsm_common/lib/urlsConfig'
 export const initialSagas = {
-    country: countryEffects
+    constants: constantsEffects
 }
 
 export const initialStates = {
-    country: countryInitialState
+    constants: constantInitialState
 }
 
 
@@ -34,17 +34,17 @@ export const sagas = (
 
 // Type definition for the GlobalState
 export type States = {
-    country: countryState
+    constants: ConstantState
 }
 
-export type StateName = 'country'
+export type StateName = 'constants'
 
 export const StateNames: { [prop: string]: StateName } = {
-    countryStateName: 'country'
+    constantStateName: 'constants'
 }
 
 export const reducers = {
-    country: countryReducerFunction
+    constants: ConstantsReducerFunction
 }
 
 export const newReducer = (stateImmerClass: any, initialState: any) =>

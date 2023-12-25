@@ -1,17 +1,10 @@
-﻿using Apprilium.TripPlanner.Application.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
-using Apprilium.TripPlanner.Infrastructure.Settings;
-using System.Reflection.Emit;
+﻿using MediatR;
 using Apprilium.TripPlanner.Domain.Entities;
+using Apprilium.TripPlanner.Domain.Repositories;
 
 namespace Apprilium.TripPlanner.Application.Passenger.Commands
 {
-    public class AddPassengerRequest : IRequest<Model.Passenger>
+    public class AddPassengerRequest : IRequest<bool>
     {
         public string FirstName { get; set; }
 
@@ -49,20 +42,20 @@ namespace Apprilium.TripPlanner.Application.Passenger.Commands
 
     }
 
-    public class RequestBookingHandler : IRequestHandler<AddPassengerRequest, Model.Passenger>
+    public class RequestAddPassengerHandler : IRequestHandler<AddPassengerRequest, bool>
     {
-        
-        private readonly IPassengerRepository _passengerRepository;
-        
 
-        public RequestBookingHandler(IPassengerRepostiory passengerRepository)
+        private readonly IPassengerRepostiory _passengerRepository;
+
+
+        public RequestAddPassengerHandler(IPassengerRepostiory passengerRepository)
         {
 
             _passengerRepository = passengerRepository;
         }
 
-        public async Task<Model.Passenger> Handle(AddPassengerRequest request, CancellationToken cancellationToken)
-        {            
+        public async Task<bool> Handle(AddPassengerRequest request, CancellationToken cancellationToken)
+        {
             await using var transaction = _passengerRepository.UnitOfWork.BeginTransaction();
             var newPassenger = new PassengerDB
             {
@@ -70,7 +63,7 @@ namespace Apprilium.TripPlanner.Application.Passenger.Commands
                 Address1 = request.Address1,
                 Address2 = request.Address2,
                 BirthCountry = request.BirthCountry,
-                Nationality = request.Nationality, 
+                Nationality = request.Nationality,
                 BirthDay = request.BirthDay,
                 BirthPlace = request.BirthPlace,
                 City = request.City,
@@ -82,18 +75,17 @@ namespace Apprilium.TripPlanner.Application.Passenger.Commands
                 LocalMiddleName = request.LocalMiddleName,
                 MiddleName = request.MiddleName,
                 PhoneNumber1 = request.PhoneNumber1,
-                  PhoneNumber2 = request.PhoneNumber2,
-                  ZipCode = request.ZipCode,
+                PhoneNumber2 = request.PhoneNumber2,
+                ZipCode = request.ZipCode,
             };
             _passengerRepository.Add(newPassenger);
 
             await _passengerRepository.UnitOfWork.SaveChangesAsync();
 
-            return new MissionReply
-            {
-                IsProcessed = missionRequest.IsProcessed,
-                MissionStatus = Enums.MissionPromoterState.Requested
-            };
+            return await Task.FromResult(true);
+
+            // }
+
         }
     }
 }

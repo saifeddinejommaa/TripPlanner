@@ -5,7 +5,8 @@
   "dependencies": {
     "@aprilium/tripsm_passenger": "^0.0.35",
     "@aprilium/tripsm_common": "^0.0.4",
-    "@aprilium/tripsm_global-states": "^0.0.34",
+    "@aprilium/tripsm_global-states": "^0.0.42",
+    "@aprilium/tripsm_constants": "^0.0.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.15",

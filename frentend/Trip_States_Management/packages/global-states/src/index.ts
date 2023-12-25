@@ -17,30 +17,39 @@ import {
     PassengerReducerFunction,
     PassengerState,
 } from '@aprilium/tripsm_passenger/lib/state'
+import {
+    ConstantsReducerFunction,
+    ConstantState,
+} from '@aprilium/tripsm_constants/lib/state'
+
 
 
 //import sagas
 import passengerSaga from '@aprilium/tripsm_passenger/lib/effects'
-
+import constantsSaga from '@aprilium/tripsm_constants/lib/effects'
 export const sagaMiddleware = createSagaMiddleware()
 
 export const reducers = {
     
-    passenger:PassengerReducerFunction 
+    passenger:PassengerReducerFunction,
+    constants:ConstantsReducerFunction
 }
 
 export const initialSagas = {
     
-   passenger: passengerSaga
+   passenger: passengerSaga,
+   constants:constantsSaga
 }
 
 export type States = {
     
-    passenger: PassengerState
+    passenger: PassengerState,
+    constants: ConstantState
 }
 
 export type StateName =
     | 'passenger'
+    | 'constants'
 
 export function setUrlConfig(
         coreApi: string,

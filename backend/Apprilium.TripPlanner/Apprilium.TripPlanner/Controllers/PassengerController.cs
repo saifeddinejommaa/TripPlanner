@@ -1,6 +1,7 @@
 ﻿using Apprilium.TripPlanner.Application.Model;
 using Apprilium.TripPlanner.Application.Queries;
 using Apprilium.TripPlanner.Application.ResourceParameters;
+using Apprilium.TripPlanner.Domain.Common;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;

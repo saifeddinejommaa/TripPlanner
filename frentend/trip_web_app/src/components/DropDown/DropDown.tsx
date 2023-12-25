@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ArrowUpIcon from '../../icons/ArrowUpIcon';
 import ArrowDownIcon from '../../icons/ArrowDownIcon';
 import CheckIcon from '../../icons/CheckIcon';
-import './global.sass'
 interface ListItem {
   value: string;
   label: string;

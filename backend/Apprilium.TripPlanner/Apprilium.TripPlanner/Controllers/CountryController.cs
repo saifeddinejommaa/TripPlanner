@@ -1,8 +1,5 @@
-﻿using Apprilium.TripPlanner.Application.Country.Model;
-using Apprilium.TripPlanner.Application.Model;
+﻿using Apprilium.TripPlanner.Application.Model;
 using Apprilium.TripPlanner.Application.Queries;
-using Apprilium.TripPlanner.Application.ResourceParameters;
-using Apprilium.TripPlanner.Domain.Common;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -23,18 +20,18 @@ namespace Apprilium.TripPlanner.Api.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
+        [HttpGet("AllCountries")]
         [ProducesResponseType(typeof(IEnumerable<Country>), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> Get()
+        public IActionResult Get()
         {
-            return Ok(await _CountryQueries.GetAllCountrys());
+            return Ok(_CountryQueries.GetAllCountries());
         }
 
-        [HttpGet("CountryById")]
+        [HttpGet("CountryById/{id}")]
         [ProducesResponseType(typeof(IEnumerable<Country>), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> GetCountryById()
+        public IActionResult GetCountryById(int id)
         {
-            return Ok(await _CountryQueries.GetCountryById());
+            return Ok( _CountryQueries.GetCountryById(id));
         }
     }
 

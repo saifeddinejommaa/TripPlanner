@@ -7,5 +7,5 @@
             "@tripsm/country": ["../country/src"]
         }
     },
-    "include": ["./src"]
+    "include": ["./src", "../constant/src/Country.ts"]
 }
