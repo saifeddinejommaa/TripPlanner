@@ -1,5 +1,5 @@
-import {PaginPatameter} from "@aprilium/tripsm_common/lib/models/PagingParameter";
-interface PassengersParameter extends PaginPatameter{
+import {PagingPatameter} from "@aprilium/tripsm_common/lib/models/PagingParameter";
+interface PassengersParameter extends PagingPatameter{
      pageSize: number, 
      pageNumber: number,
      sortColumn: string,

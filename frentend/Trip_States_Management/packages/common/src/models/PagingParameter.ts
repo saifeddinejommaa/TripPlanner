@@ -1,6 +1,6 @@
-export class PaginPatameter{
+export class PagingPatameter{
 
-    private pageSize :number=25;
+    public pageSize :number=25;
     public  pageNumber :number=1;
     public sortColumn :string|undefined;
     public sortOrder :string|undefined; //"DESC" vs "ASC"

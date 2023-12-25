@@ -19,6 +19,7 @@ import { store, persistor, PersistGate, localsagas } from "./configStore";
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import Constant from '@aprilium/tripsm_constants/lib/models/Constant';
 import { ConstantActions } from '@aprilium/tripsm_constants/lib/state';
+import {getConstants} from '@aprilium/tripsm_constants/lib/selectors';
 export type Props = {};
 initSagaMiddleware(localsagas);
 setUrlConfig("https://localhost:47616",true);

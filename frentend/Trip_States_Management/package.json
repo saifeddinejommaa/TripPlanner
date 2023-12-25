@@ -15,7 +15,6 @@
     "@aprilium/tripsm_common": "file:packages\\common",
     "@aprilium/tripsm_constants": "file:packages\\constant",
     "@aprilium/tripsm_global-states": "file:packages\\global-states",
-    "@aprilium/tripsm_passenger": "file:packages\\passenger",
-    "@aprilium/tripsm_country":"file:packages\\country"
+    "@aprilium/tripsm_passenger": "file:packages\\passenger"
   }
 }

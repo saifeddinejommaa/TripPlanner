@@ -10,6 +10,7 @@ import {
 } from 'redux-persist'
 import UrlsConfigs from "@aprilium/tripsm_common/lib/urlsConfig"
 import { urlsConfig as passengerUrlConfig } from '@aprilium/tripsm_passenger/lib'
+import { urlsConfig as constantsUrlConfig } from '@aprilium/tripsm_constants/lib'
 //import state
 
 
@@ -59,6 +60,11 @@ export function setUrlConfig(
         CORE_BASE_URL: coreApi,
         DEBUG_MODE: debugMode
         })
+    
+    constantsUrlConfig.setURls({
+        CORE_BASE_URL: coreApi,
+        DEBUG_MODE: debugMode
+    })
     }
 
 
